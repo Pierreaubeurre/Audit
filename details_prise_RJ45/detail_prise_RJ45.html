@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_prise_RJ45_style.css">
+        <script type='text/javascript' src="../timer.js"></script>
+        <script type='text/javascript' src="detail_prise_RJ45_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+        
+    </header>
+    <body>
+
+        <h2 id="titre-detail-prise">Détails de la prise RJ45</h2>
+
+        <div id="formulaire">
+
+            <h3 id="intitule-prise"></h3><!--Obligatoire-->
+            
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Nom du bandeau :</span>
+                <span class ="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+                
+                <span class ="cle">Nombre de prise branché :</span>
+                <span class ="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+                
+                <span class ="cle">Nombre de prise sur le bandeau :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+                
+                <span class ="cle">Catégorie :</span>
+                <span class ="valeur" id="3"></span>
+            </p>
+            
+            <p class="info-paragraph"><!--Facultative-->
+                
+                <span class ="cle">Blindage :</span>
+                <span class ="valeur" id="4"></span>
+            </p>
+            
+
+            <p class="info-paragraph"><!--Facultative-->
+                
+                <span class ="cle">Etat :</span>
+                <span class ="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+                
+                <span class ="cle">Terminaisons :</span>
+                <span class ="valeur" id="6"></span>
+            </p>
+            
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_hyper_V_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_hyper_V_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-hyper_V">Détails de l'Hyper V</h2>
+
+        <div id="formulaire">
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Mis sous domaine ?</span>
+                <span class ="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Présence d'une carte de Supervision ?</span>
+                <span class ="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Cocher les comptes présents :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Chemin d'accès repertoire VMs :</span>
+                <span class ="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">ISL installé :</span>
+                <span class ="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">ApexOne installé :</span>
+                <span class ="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Contrôle à distance activé :</span>
+                <span class ="valeur" id="6"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Désactivation du pare-feu :</span>
+                <span class ="valeur" id="7"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Version de l'OS :</span>
+                <span class ="valeur" id="8"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Association de carte réseau ?</span>
+                <span class ="valeur" id="9"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Réseau présent sur le serveur :</span>
+                <span class ="valeur" id="10"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Nombre d'interface réseau disponible :</span>
+                <span class ="valeur" id="11"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Nombre de VM :</span>
+                <span class ="valeur" id="12"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Nom des VMs :</span>
+                <span class ="valeur" id="13"></span>
+            </p>
+
+        </div>
+
+    </body>
+
+</html>

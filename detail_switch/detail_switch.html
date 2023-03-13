@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_switch_style.css">
+        <script type='text/javascript' src="../timer.js"></script>
+        <script type='text/javascript' src="detail_switch_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-switch"></h2>
+
+
+        <div id="formulaire">
+
+            <h3 id="intitule-switch"></h3><!--Obligatoire-->
+
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Ip 1:</span>
+                <span class="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 2:</span>
+                <span class="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 3:</span>
+                <span class="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 4:</span>
+                <span class="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 5:</span>
+                <span class="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 6:</span>
+                <span class="valeur" id="6"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 7:</span>
+                <span class="valeur" id="7"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 8:</span>
+                <span class="valeur" id="8"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 9:</span>
+                <span class="valeur" id="9"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Ip 10:</span>
+                <span class="valeur" id="10"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Masque :</span>
+                <span class="valeur" id="11"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Vlan :</span>
+                <span class="valeur" id="12"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Nom d'utilisateur :</span>
+                <span class="valeur" id="13"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Mot de passe :</span>
+                <span class="valeur" id="14"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Modèles des switch :</span>
+                <span class="valeur" id="15"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Numéro de série :</span>
+                <span class="valeur" id="16"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Version du firmware :</span>
+                <span class="valeur" id="17"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Sauvegarde de la configuration :</span>
+                <a class="valeur" href="" target="_blank" id="18" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">La configuration de démarrage est-elle identique à la configuration actuelle ?</span>
+                <span class="valeur" id="19"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Switch en stack :</span>
+                <span class="valeur" id="20"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire--> <!--A afficher si oui avant-->
+
+                <span class="cle">Nombre de switch dans la pile :</span>
+                <span class="valeur" id="21"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Type de stack :</span>
+                <span class="valeur" id="22"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Câbles DAC conformes au contructeur :</span>
+                <span class="valeur" id="23"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Stack minimum en 10G :</span>
+                <span class="valeur" id="24"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">1 ou plusieurs switch "missing" :</span>
+                <span class="valeur" id="25"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Switch commandé avec la priorité la plus haute :</span>
+                <span class="valeur" id="26"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Type de switch :</span>
+                <span class="valeur" id="27"></span>
+            </p>
+
+
+            <!--Séparation switch basique-avancé-->
+
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Localisation SNMP :</span>
+                <span class="valeur" id="28"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Fichier ERREUR :</span>
+                <a class="valeur" href="" target="_blank" id="29" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Fichier mac :</span>
+                <a class="valeur" href="" target="_blank" id="30" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Fichier ARP :</span>
+                <a class="valeur" href="" target="_blank" id="31" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Fichier LLDP :</span>
+                <a class="valeur" href="" target="_blank" id="32" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Fichier VLAN :</span>
+                <a class="valeur" href="" target="_blank" id="33" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Fichier INTERFACE :</span>
+                <a class="valeur" href="" target="_blank" id="34" download>Télécharger</a>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Les ventilateurs fonctionnent-ils correctement ?</span>
+                <span class="valeur" id="35"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">% budget POE :</span>
+                <span class="valeur" id="36"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Les SFP correspondent-ils aux recommandations constructeurs :</span>
+                <span class="valeur" id="37"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire--> <!--Si réponse précédente=partiellement-->
+
+                <span class="cle">SFP non conforme :</span>
+                <span class="valeur" id="38"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Les interfaces importantes (switchs, serveur...) sont nommées ?</span>
+                <span class="valeur" id="39"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Précisions sur interface non nommées, ou partiellement nommées :</span>
+                <span class="valeur" id="40"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Les différentes rocades sont-ils configuré en aggrégation ?</span>
+                <span class="valeur" id="41"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Précisions sur les rocades sans aggregations :</span>
+                <span class="valeur" id="42"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Les agrégations sont-elles statique ou dynamique ?</span>
+                <span class="valeur" id="43"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Faire la liste des agrégations avec leur port respectif :</span>
+                <span class="valeur" id="44"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Pour les interfaces configurées en agrégation , les 2 liens sont actifs ?</span>
+                <span class="valeur" id="45"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Indiquer les liens qui ne sont pas actifs (ex Trk1 : 1/27 OK, 2/27 NOK) :</span>
+                <span class="valeur" id="46"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Facultative-->
+
+                <span class="cle">Le spanning-tree est-il activé ?</span>
+                <span class="valeur" id="47"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Mode de spanning-tree :</span>
+                <span class="valeur" id="48"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Priorité global du switch :</span>
+                <span class="valeur" id="49"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Les ports terminaux (pc,imprimante,borne wifi) sont configuré en edge port +
+                bpdu-protection./PAS DE EDGE PORT + BPDU PROTECTION SUR LES ROCADES DES SWITCHS :</span>
+                <span class="valeur" id="50"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Précision sur les ports sans edge port ou sans BPDU protection :</span>
+                <span class="valeur" id="51"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Date des dernières modifications spanning-tree :</span>
+                <span class="valeur" id="52"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Raison des dernières modifications spanning-tree :</span>
+                <span class="valeur" id="53"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Le switch est à l'heure ?</span>
+                <span class="valeur" id="54"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Source de mise à jour de l'heure :</span>
+                <span class="valeur" id="55"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Date de la dernière synchronisation NTP :</span>
+                <span class="valeur" id="56"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Temps de déconnexion max si inactivité (SSH) :</span>
+                <span class="valeur" id="57"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Temps de déconnexion si inactivité console :</span>
+                <span class="valeur" id="58"></span>
+            </p>
+
+            <p class="info-paragraph" hidden><!--Obligatoire-->
+
+                <span class="cle">Résumé des problèmes du switch :</span>
+                <span class="valeur" id="59"></span>
+            </p>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_audit_style.css">
+        <script src="detail_audit_script.js" defer></script>
+        <script type='text/javascript' src="../timer.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+    </header>
+    <body>
+
+        <h2 id="titre-detail-audit"> Détails de l'audit </h2>
+
+        <div id="layout">
+
+
+            <div id="info-lycee">
+
+            <!-- rempli avec le js -->    
+            
+                <p id="batiment"> Bâtiment: </p>
+                <p id="etage"> Etage: </p>
+                <p id="acces"> Passe-clé: </p>
+                <p id="clim"> Clim (VMC): </p>
+                <p id="superficie"> Superficie: </p>
+                <p id="radiateur"> Radiateur: </p>
+
+
+            </div>
+
+            <div id="div-liste-salle">
+
+                <ul id="liste-salle">
+
+                <!-- rempli avec le js -->
+
+                </ul>
+
+
+                <div id="div-ajout-salle">
+
+                    <button id="btn-ajout-salle" onclick="ajout_salle()"> Ajouter une salle </button>
+    
+                </div>
+
+
+            </div>
+
+
+
+            <div id="conteneur-info">
+
+                <!-- rempli avec le js -->  
+
+                <div id="info-baie">
+
+                    <div class="titre-equipement" id="div-titre-baie">
+                        <h3> Baie </h3>
+                    </div>
+                    <table id="table-baie">
+                        <tr>
+                            <th scope="col"> NOM </th>
+                            <th scope="col"> <select id="baie-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                            <th scope="col"> <select id="baie-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_baie">
+                            <th scope="row"> <p class="absence-equip"> Baie 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_baie">
+                            <th scope="row"> <p class="absence-equip"> Baie 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div id="info-switch">
+
+                    <div class="titre-equipement" id="div-titre-switch">
+                        <h3> Switch </h3>
+                    </div>
+                    <table id="table-switch">
+                        <tr>
+                            <th scope="col"> NOM </th>
+                            <th scope="col"> <select id="switch-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                            <th scope="col"> <select id="switch-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_switch">
+                            <th scope="row"> <p class="absence-equip"> Switch 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_switch">
+                            <th scope="row"> <p class="absence-equip"> Switch 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div id="info-serveur">
+
+                    <div class="titre-equipement" id="div-titre-serveur">
+                        <h3> Serveur </h3>
+                    </div>
+                    <table id="table-serveur">
+                        <tr>
+                            <th scope="col"> NOM </th>
+                            <th scope="col"> <select id="serveur-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                            <th scope="col"> <select id="serveur-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_serveur">
+                            <th scope="row"> <p class="absence-equip"> Serveur 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_serveur">
+                            <th scope="row"> <p class="absence-equip"> Serveur 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+                <div id="info-onduleur">
+
+                    <div class="titre-equipement" id="div-titre-onduleur">
+                        <h3> Onduleur </h3>
+                    </div>
+                    
+                    <table id="table-onduleur">
+                        <tr>
+                            <th scope="col"> ID </th>
+                            <th scope="col"> <select id="onduleur-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select></th>
+                            <th scope="col"> <select id="onduleur-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_onduleur">
+                            <th scope="row"> <p class="absence-equip"> Onduleur 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_onduleur">
+                            <th scope="row"> <p class="absence-equip"> Onduleur 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div id="info-fibre">
+
+                    <div class="titre-equipement" id="div-titre-fibre">
+                        <h3> Fibre </h3>
+                    </div>
+                    
+                    <table id="table-fibre">
+                        <tr>
+                            <th scope="col"> LD_LA </th>
+                            <th scope="col"> <select id="fibre-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select></th>
+                            <th scope="col"> <select id="fibre-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_fibre">
+                            <th scope="row"> <p class="absence-equip"> Fibre 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_fibre">
+                            <th scope="row"> <p class="absence-equip"> Fibre 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div id="info-RJ45">
+
+                    <div class="titre-equipement" id="div-titre-RJ45">
+                        <h3> RJ-45 </h3>
+                    </div>
+                    
+                    <table id="table-RJ45">
+                        <tr>
+                            <th scope="col"> NOM </th>
+                            <th scope="col"> <select id="RJ45-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                            <th scope="col"> <select id="RJ45-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_RJ45">
+                            <th scope="row"> <p class="absence-equip"> RJ-45 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_RJ45">
+                            <th scope="row"> <p class="absence-equip"> RJ-45 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div id="info-rocade">
+
+                    <div class="titre-equipement" id="div-titre-rocade">
+                        <h3> Rocade </h3>
+                    </div>
+                    
+                    <table id="table-rocade">
+                        <tr>
+                            <th scope="col"> LD_LA </th>
+                            <th scope="col"> <select id="rocade-choix-un" class="choix"> <option> -- Choisissez une valeur -- </option> </select></th>
+                            <th scope="col"> <select id="rocade-choix-deux" class="choix"> <option> -- Choisissez une valeur -- </option> </select> </th>
+                        </tr>
+                        <tr class="equipement_rocade">
+                            <th scope="row"> <p class="absence-equip"> Rocade 1 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+                        <tr class="equipement_rocade">
+                            <th scope="row"> <p class="absence-equip"> Rocade 2 </p> </th>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+    </body>
+
+</html>

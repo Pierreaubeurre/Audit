@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_impression_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_impression_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-impression">Détails du serveur d'impression</h2>
+
+        <div id="formulaire">
+
+
+            <h3 id="intitule-impression" id="0">NOM </h3><!--Obligatoire-->
+
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Nombre d'imprimante à remonter :</span>
+                <span class="valeur" id="1"></span>
+            </p>
+
+        
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Pilotes présents :</span>
+                <span class="valeur" id="2"></span>
+            </p>
+
+        
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Méthode de déploiement :</span>
+                <span class="valeur" id="3"></span>
+            </p>
+
+        
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Patch d'imprimante mis en place :</span>
+                <span class="valeur" id="4"></span>
+            </p>
+
+
+        </div>
+
+    </body>
+
+</html>

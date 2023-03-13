@@ -1,0 +1,192 @@
+* {
+
+    font-family: Georgia, serif;
+}
+
+body {
+
+    background-color: rgb(129, 202, 207);
+    overflow-y: auto;
+
+}
+
+#logo-grand-est {
+
+    width: 200px;
+    height: 60px;
+
+}
+
+
+#btn-deconnexion {
+
+    background-color: white;
+    float: right;
+    width: 130px;
+    height: 20px;
+    border-radius: 3vh;
+    border: 0;
+    margin-left: 75px;
+    cursor: pointer;
+    align-content: flex-end;
+    box-shadow: inset 0.1em 0.1em 1em rgb(129, 202, 207);
+
+}
+
+#btn-deconnexion:hover {
+
+    background-color: rgb(129, 202, 207);
+    box-shadow: inset 0.1em 0.1em 1em white;
+    transition: 0.4s;
+
+}
+
+#affichage-utilisateur {
+
+    text-align: end;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 45px;
+    width: 150px;
+    height: fit-content;
+
+}
+
+#header-deco-utilisateur {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: -6.7vh;
+    float: right;
+    width: 200px;
+    height: 60px;
+
+}
+
+#header-logo {
+
+    margin-top: 4.9vh;
+    margin-left: 8vh;
+    width: 200px;
+    height: 60px;
+
+}
+
+#formulaire {
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    min-height: 60vh;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0.5em 0.5em 2em rgb(117, 193, 196);
+    border-radius: 3vh;
+
+}
+
+
+#titre-detail-onduleur {
+
+    text-align: center;
+
+}
+
+#intitule-onduleur {
+
+    text-align: center;
+
+}
+
+
+.info-paragraph {
+
+    margin-left: 7vh;
+
+}
+
+.info-accordeon {
+    background-color: #0169a3;
+    cursor: pointer;
+    border-radius: 3vh;
+    margin-right: 6vh;
+    margin-left: 6vh;
+    margin-bottom: 2vh;
+    width: 80vh;
+    height: 3vh;
+    margin-top: 1vh;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin-bottom: 0;
+    transition: 0.4s;
+}
+  
+
+.active, .info-accordeon:hover {
+
+    box-shadow: inset 0.2em 0.2em 1em rgb(255, 255, 255);
+
+}
+
+.active {
+
+    box-shadow: inset 0.5em 0.5em 2em rgb(255, 255, 255);
+    border-radius: 2vh 2vh 0vh 0vh;
+    
+
+}
+  
+
+.detail-element {
+    border-radius: 0vh 0vh 2vh 2vh;
+    box-shadow: inset 0.5em -0.5em 2em rgb(255, 255, 255);
+    background-color: rgb(129, 202, 207);
+    margin-right: 6vh;
+    margin-left: 6vh;
+    margin-bottom: 2vh;
+    width: 80vh;
+    display: none;
+    overflow: hidden;
+}
+
+.detail-element > p {
+
+    margin-left: 1vh;
+
+}
+
+.info-accordeon:after {
+    content: "\02795";
+    font-size: 13px;
+    float: right;
+}
+  
+.info-accordeon.active:after {
+    content: "\2796";
+}
+
+.rouge {
+    color: red;
+}
+
+.orange {
+    color:   #ce2a07 
+}
+
+.cle {
+
+    font-weight: bold;
+    color: #0169a3;
+
+}
+
+.valeur {
+
+    font-style: italic;
+
+}

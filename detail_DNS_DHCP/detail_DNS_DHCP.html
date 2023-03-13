@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_DNS_DHCP_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_DNS_DHCP_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-DNS_DHCP"></h2>
+
+        <div id="formulaire">
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Nom du domaine :</span>
+                <span class ="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Compte de service présent dans l'AD :</span>
+                <span class ="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Méthode pour remonter les bureaux :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Chemin d'accès au bureau si méthode par variable :</span>
+                <span class ="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Apex :</span>
+                <span class ="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Redirecteurs DNS présent :</span>
+                <span class ="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Zone de recherche direct Wi-Fi toujours présente ?</span>
+                <span class ="valeur" id="6"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Dernière version du fichier Wpad.dat :</span>
+                <span class ="valeur" id="7"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">KMS bien installé ?</span>
+                <span class ="valeur" id="8"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Méthode d'adressage IP :</span>
+                <span class ="valeur" id="9"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Arboresence AD conforme au plan ACL ORG</span>
+                <span class ="valeur" id="10"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Les GPO RGE sont correctes :</span>
+                <span class ="valeur" id="11"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Les fichiers PolicyDefinition sont présents :</span>
+                <span class ="valeur" id="12"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Scripts présent dans le NETLOGON</span>
+                <span class ="valeur" id="13"></span>
+            </p>
+
+
+        </div>
+
+    </body>
+
+</html>

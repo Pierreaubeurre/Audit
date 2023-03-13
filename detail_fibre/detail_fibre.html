@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_fibre_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_fibre_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-fibre">Détails de la fibre</h2>
+
+        <div id="formulaire">
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Type de fibre :</span>
+                <span class ="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Nombre de brins totals :</span>
+                <span class ="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Nombre de brins utilisés :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Type de connecteur :</span>
+                <span class ="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Extrémités :</span>
+                <span class ="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Longueur (en U) :</span>
+                <span class ="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Etiquetage des bandeaux fibres :</span>
+                <span class ="valeur" id="6"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Etiquetage des jarretières :</span>
+                <span class ="valeur" id="7"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Etat (jugement ou test avec appareil specialisé) :</span>
+                <span class ="valeur" id="8"></span>
+            </p>
+
+        </div>
+
+    </body>
+
+</html>

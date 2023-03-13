@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_onduleur_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_onduleur_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-onduleur">Détails de l'Onduleur</h2>
+
+
+        <div id="formulaire">
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">IP :</span>
+                <span class="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Marque :</span>
+                <span class="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Modèle :</span>
+                <span class="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Présence d'une carte réseau de management :</span>
+                <span class="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Ondulateur paramétré :</span>
+                <span class="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Puissance (en KVA) :</span>
+                <span class="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Durée de la batterie (en H) :</span>
+                <span class="valeur" id="6"></span>
+            </p>
+
+        </div>
+
+    </body>
+</html>

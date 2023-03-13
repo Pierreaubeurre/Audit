@@ -1,0 +1,253 @@
+* {
+
+    font-family: Georgia, serif;
+}
+
+
+body {
+
+    background-color: rgb(129, 202, 207);
+    overflow-y: auto;
+
+}
+
+#btn-deconnexion {
+
+    background-color: white;
+    float: right;
+    width: 130px;
+    height: 20px;
+    border-radius: 3vh;
+    border: 0;
+    margin-left: 75px;
+    cursor: pointer;
+    align-content: flex-end;
+    box-shadow: inset 0.1em 0.1em 1em rgb(129, 202, 207);
+
+}
+
+#btn-deconnexion:hover {
+
+    background-color: rgb(129, 202, 207);
+    box-shadow: inset 0.1em 0.1em 1em white;
+    transition: 0.4s;
+
+}
+
+#affichage-utilisateur {
+
+    text-align: end;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 45px;
+    width: 150px;
+    height: fit-content;
+
+}
+
+#header-deco-utilisateur {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: -6.7vh;
+    float: right;
+    width: 200px;
+    height: 60px;
+
+}
+
+#logo-grand-est {
+
+    float: left;
+    width: 200px;
+    height: 60px;
+
+}
+
+#header-logo {
+
+    margin-top: 4.9vh;
+    margin-left: 8vh;
+    width: 200px;
+    height: 60px;
+
+}
+
+
+.contenu-td-audit, #titre-liste-audit {
+
+    font-size: 2vh;
+
+}
+
+#titre-liste-audit {
+
+    text-align: center;
+    margin-left: 6vh !important;
+    margin-right: 8vh;
+    background-color: rgb(129, 202, 207);
+    box-shadow: 0.2em 0.3em 1em rgb(129, 202, 207);
+    border-radius: 3vh;
+    margin-bottom: 1vh;
+    margin-top: 4vh;
+
+}
+
+#formulaire-ajout-audit input, #btn-confirmer-ajout-audit  {
+
+    margin-left: 3vh;
+    border: 0;
+    height: fit-content;
+    margin-top: 2vh;
+    width: 12vh;
+    min-height: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 2vh;
+    box-shadow: inset 0.2em 0.2em 0.4em rgb(117, 193, 196), inset -0.2em -0.2em 0.4em rgb(117, 193, 196);
+
+}
+
+#btn-confirmer-ajout-audit {
+
+    cursor: pointer;
+
+}
+
+#btn-confirmer-ajout-audit:hover  {
+
+    background-color: rgb(129, 202, 207);
+    box-shadow: inset 0.1em 0.1em 1em white;
+    transition: 0.4s;
+
+}
+
+#formulaire-ajout-audit {
+
+
+    background-color: #0169a3;
+    height: 200px;
+    width: 180px;
+    border-radius: 4vh 4vh 4vh 4vh;
+    margin-top: -67vh;
+    margin-left: 10vh;
+    box-shadow: inset 0.1em 0.1em 1em rgb(129, 202, 207), inset -0.1em -0.1em 1em rgb(129, 202, 207);
+
+}
+
+#info-lycee {
+
+    background-color: white;
+    box-shadow: inset 0.2em 0.2em 1em rgb(117, 193, 196);
+    border-radius: 3vh;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 185vh;
+    min-height: 6vh;
+    height: fit-content;
+    gap: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#info-lycee > p {
+
+
+    margin-left: 6vh;
+    flex-grow: 1;
+
+}
+
+
+
+#formulaire {
+
+    white-space: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    width: 80vh;
+    min-height: 60vh;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0.5em 0.5em 2em rgb(117, 193, 196);
+    border-radius: 3vh;
+
+}
+
+
+
+
+#btn-ajout {
+
+    background-color: rgb(129, 202, 207);
+    text-align: center;
+    width: 30vh;
+    height: 3vh;
+    border: 0;
+    box-shadow: inset 0.1em 0.2em 0.2em rgb(226, 255, 251);
+    border-radius: 3vh;
+    font-size: 2vh;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+#liste-audit {
+
+
+    width: 80vh;
+    height: 60vh;
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+#liste-audit tr td {
+
+    width: 20vh;
+    height: 30vh;
+
+}
+
+
+.contenu-td-audit {
+
+    float: left;
+    white-space: pre-line;
+    margin-top: 2vh;
+    margin-left: 4vh;
+    width: 210px;
+    height: fit-content;
+
+}
+
+
+.contenu-td-image {
+
+    float: right;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+
+}
+
+
+table tr td:nth-child(even)  {
+
+    border-left: 2px solid rgb(0, 0, 0);
+    position: relative;
+    left: auto;
+    right: auto;
+
+}
+

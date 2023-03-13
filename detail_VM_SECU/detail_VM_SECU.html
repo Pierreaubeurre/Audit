@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_VM_SECU_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_VM_SECU_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-VM_SECU">Détails de la VM SECU </h2>
+
+        <div id="formulaire">
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Espace disque dédié au WSUS :</span>
+                <span class="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Chemin d'accès :</span>
+                <span class="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Tâche de nettoyage WSUS active ?</span>
+                <span class="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Limite de mémoire vive privé remis sur 0 (IIS) :</span>
+                <span class="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Les GPO sont correctes :</span>
+                <span class="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Les PC remontes correctement dans la console ApexOne :</span>
+                <span class="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Y a-t-il des PC hors domaine présent ?</span>
+                <span class="valeur" id="6"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Le fichier .msi est il présent sur le bureau comme dans le NETLOGON :</span>
+                <span class="valeur" id="7"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">La console remonte des anomalies, virus, autre :</span>
+                <span class="valeur" id="8"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class="cle">Le san automatique est bien en place :</span>
+                <span class="valeur" id="9"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Heure du san automatique :</span>
+                <span class="valeur" id="10"></span>
+            </p>
+
+        </div>
+
+    </body>
+
+</html>

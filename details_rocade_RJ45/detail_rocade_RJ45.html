@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_rocade_RJ45_style.css">
+        <script type='text/javascript' src="../timer.js"></script>
+        <script type='text/javascript' src="detail_rocade_RJ45_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+        
+    </header>
+    <body>
+
+        <h2 id="titre-detail-rocade">Détails de la rocade</h2>
+
+
+        <div id="formulaire">
+
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Longueur :</span>
+                <span class ="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Etat :</span>
+                <span class ="valeur" id="1"></span>
+            </p>
+            
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Catégorie :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Blindage :</span>
+                <span class ="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Etiquetage des rocades :</span>
+                <span class ="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Terminaisons:</span>
+                <span class ="valeur" id="5"></span>
+            </p>
+
+
+        </div>
+
+    </body>
+</html>

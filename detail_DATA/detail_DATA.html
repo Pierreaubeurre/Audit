@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_DATA_style.css">
+        <script type='text/javascript' src="../timer.js"></script>
+        <script type='text/javascript' src="detail_DATA_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+        
+    </header>
+    <body>
+
+        <h2 id="titre-detail-DATA">Détails du DATA</h2>
+
+        <div id="formulaire">
+
+            <p class="info-paragraph">
+
+                <span class ="cle">ACL ORG en place et fonctionnel :</span>
+                <span class ="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Version de ACL ORG :</span>
+                <span class ="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Espace de stockage sur le D: (en Go) :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Chemin d'accès au dossier travail :</span>
+                <span class ="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Chemin d'accès au fichier de log :</span>
+                <span class ="valeur" id="4"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Gestion des quotas en place :</span>
+                <span class ="valeur" id="5"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Nettoyage du dossier commun actif ?</span>
+                <span class ="valeur" id="6"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Le dossier Zaklogon remonte correctement les informations :</span>
+                <span class ="valeur" id="7"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Droit d'accès au dossier conforme :</span>
+                <span class ="valeur" id="8"></span>
+            </p>
+
+
+        </div>
+
+    </body>
+</html>

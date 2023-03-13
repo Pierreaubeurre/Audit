@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="detail_ticketing_style.css"> 
+    <script type='text/javascript' src="../timer.js"></script>
+    <script type='text/javascript' src="detail_ticketing_script.js" defer></script>
+    <title>Audit Grand Est</title>
+  </head>
+  <header>
+    <div id="header-logo">
+      <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+    </div>
+    <div id="header-deco-utilisateur">
+      <p id="affichage-utilisateur"> Utilisateur </p>
+      <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+    </div>
+
+  </header>
+
+  <body>
+
+    <h2 id="titre-detail-ticketing">Détails de la solution de ticketing </h2>
+
+    <div id="formulaire">
+
+      <p class="info-paragraph"><!--Obligatoire-->
+
+        <span class="cle">Nom de la solution utilisé :</span>
+        <span class="valeur" id="0"></span>
+      </p>
+
+      <p class="info-paragraph"><!--Facultative-->
+
+        <span class="cle">Version de la solution :</span>
+        <span class="valeur" id="1"></span>
+      </p>
+
+      <p class="info-paragraph"><!--Facultative-->
+
+        <span class="cle">Ouvert vers l'extérieur ?</span>
+        <span class="valeur" id="2"></span>
+      </p>
+
+      <p class="info-paragraph"><!--Obligatoire-->
+
+        <span class="cle">Liaison LDAP en place ?</span>
+        <span class="valeur" id="3"></span>
+      </p>
+
+      <p class="info-paragraph" id="precision" hidden><!--Facultative--><!--A afficher si oui à la réponse précédente-->
+
+        <span class="cle">Quelle compte est utilisé pour la remontée ?</span>
+        <span class="valeur" id="4"></span>
+      </p>
+
+      <p class="info-paragraph"><!--Facultative-->
+
+        <span class="cle">Est-il utilisé comme service d'inventory ?</span>
+        <span class="valeur" id="5"></span>
+      </p>
+
+      <p class="info-paragraph"><!--Facultative-->
+
+        <span class="cle">Y a-t-il un service SMTP ?</span>
+        <span class="valeur" id="6"></span>
+      </p>
+
+      <p class="info-paragraph"><!--Facultative-->
+
+        <span class="cle">Qui peut accéder au service ?</span>
+        <span class="valeur" id="7"></span>
+      </p>
+      
+    </div>
+
+  </body>
+
+</html>

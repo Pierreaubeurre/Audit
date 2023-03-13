@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="detail_NAS_style.css">
+    <!-- 
+    <script type='text/javascript' src="../timer.js"></script> 
+    -->
+    <script type='text/javascript' src="detail_NAS_script.js" defer></script>
+    <title>Audit Grand Est</title>
+</head>
+<header>
+    <div id="header-logo">
+        <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+    </div>
+    <div id="header-deco-utilisateur">
+        <p id="affichage-utilisateur"> Utilisateur </p>
+        <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+    </div>
+
+</header>
+
+<body>
+
+    <h2 id="titre-detail-NAS">Détails du service de déploiement NAS</h2>
+
+    <div id="formulaire">
+
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">Nombre de baie :</span>
+            <span class="valeur" id="0"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">Nombre de baie utilisé :</span>
+            <span class="valeur" id="1"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Facultative-->
+
+            <span class="cle">Indiquer la méthode de RAID mis en place :</span>
+            <span class="valeur" id="2"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">Espace disque total :</span>
+            <span class="valeur" id="3"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">Nettoyage automatique de la corbeille réseau ?</span>
+            <span class="valeur" id="4"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+          <span class="cle">Compte svc_veeam en place ?</span>
+            <span class="valeur" id="5"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">Bonne remonté des sauvegardes :</span>
+            <span class="valeur" id="6"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">NAS mis à jour ?</span>
+            <span class="valeur" id="7"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Obligatoire-->
+
+            <span class="cle">Y a-t-il d'autre sauvegarde que Veeam ?</span>
+            <span class="valeur" id="8"></span>
+        </p>
+
+        <p class="info-paragraph" id="precision" hidden><!--Facultative--><!--A afficher si oui question précédente-->
+
+            <span class="cle">Précisez :</span>
+            <span class="valeur" id="9"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Facultative-->
+
+            <span class="cle">Présence d'une carte réseau ?</span>
+            <span class="valeur" id="10"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Facultative-->
+
+            <span class="cle">Multiplexage de carte de réseau ?</span>
+            <span class="valeur" id="11"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Facultative-->
+
+            <span class="cle">Nombre de ports utilisés ?</span>
+            <span class="valeur" id="12"></span>
+        </p>
+
+        <p class="info-paragraph"><!--Facultative-->
+
+            <span class="cle">Mise en place d'un port management ?</span>
+            <span class="valeur" id="13"></span>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

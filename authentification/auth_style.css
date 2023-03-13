@@ -1,0 +1,113 @@
+* {
+
+    font-family: Georgia, serif;
+
+}
+
+body {
+
+    background-color: rgb(129, 202, 207);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+
+}
+
+
+footer {
+
+    background-color: rgb(86, 180, 187);
+    width: 100%;
+    margin-top: 3vh;
+	padding: 3vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    box-shadow: inset 0px 6px 10px rgb(128, 128, 128);
+
+}
+
+
+
+#logo-grand-est {
+
+    margin-top: 4.8vh;
+    margin-left: 9.1vh;
+    width: 200px;
+    height: 60px;
+
+}
+
+
+h4, #titre-auth {
+
+    font-size: 2.6vh;
+
+}
+
+#titre-auth {
+
+    text-align: center;
+    margin-left: 4vh !important;
+    margin-right: 6vh;
+    background-color: rgb(129, 202, 207);
+    box-shadow: inset 0.2em 0.6em 2em rgb(129, 202, 207);
+    border-radius: 3vh;
+    margin-bottom: 12vh;
+    margin-top: -0.10vh;
+
+}
+
+#formulaire {
+
+    word-break: normal;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0.5em 0.5em 2em rgb(117, 193, 196);
+    border-radius: 3vh;
+
+}
+
+#centrer-formulaire {
+
+    margin-left: 4vh;
+
+}
+
+
+#btn-auth {
+
+    border: 0;
+    background-color: rgb(129, 202, 207);
+    box-shadow: inset 0.1em 0.1em 1em white;
+    border-radius: 3vh;
+    margin-top: 4vh;
+    font-size: 2vh;
+
+}
+
+#btn-auth:hover {
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0.1em 0.1em 1em rgb(129, 202, 207);
+    transition: 0.4s;
+
+}
+
+
+input {
+
+    border-radius: 3vh;
+    border: 0;
+    width: 16vh;
+    height: 2.3vh;
+    background-color: rgb(182, 193, 243);
+    box-shadow: inset 0.1em 0.3em 2em rgb(254, 255, 255);
+
+}

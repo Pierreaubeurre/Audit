@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_PXE_style.css">
+        <script type='text/javascript' src="../timer.js"></script> 
+        <script type='text/javascript' src="detail_PXE_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+
+    </header>
+
+    <body>
+
+        <h2 id="titre-detail-PXE">Détails du service de déploiement PXE </h2>
+
+        <div id="formulaire">
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Solution utilisée :</span>
+                <span class="valeur" id="0"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Nombre de giga alloué :</span>
+                <span class="valeur" id="1"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Nombre d'image déjà présente :</span>
+                <span class="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Option PXE correctement renseigné dans le DHCP ?</span>
+                <span class="valeur" id="3"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class="cle">Le service est :</span>
+                <span class="valeur" id="4"></span>
+            </p>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_baie_style.css">
+        <script type='text/javascript' src="../timer.js"></script>
+        <script type='text/javascript' src="detail_baie_script.js" defer></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+        
+    </header>
+    <body>
+
+        <h2 id="titre-detail-baie">Détails de la Baie</h2>
+
+        <div id="formulaire">
+
+            <h3 id="intitule-baie"></h3><!--Obligatoire-->
+
+            <img id="image-baie" alt="image de la baie"><!--Facultative-->
+
+
+            <button class="info-accordeon" id="button-fibre" hidden>Fibre</button>
+            <div class="detail-element" id="detail-fibre" hidden>
+            </div>
+
+            <button class="info-accordeon" id="button-rocade" hidden>Rocades RJ45</button>
+            <div class="detail-element" id="detail-rocade" hidden>
+            </div>
+
+            <button class="info-accordeon" id="button-prise" hidden>Prise RJ45</button>
+            <div class="detail-element" id="detail-prise" hidden>
+            </div>
+
+            <button class="info-accordeon" id="button-onduleur" hidden>Onduleur</button>
+            <div class="detail-element" id="detail-onduleur" hidden>
+            </div>
+            
+            <button class="info-accordeon" id="button-switch" hidden>Switch</button>
+            <div class="detail-element" id="detail-switch" hidden>
+            </div>
+
+            <button class="info-accordeon" id="button-serveur" hidden>Serveur</button>
+            <div class="detail-element" id="detail-serveur" hidden>
+            </div>
+
+
+            <script> 
+            
+                let info_accordeon = document.getElementsByClassName("info-accordeon");
+
+                for (let i = 0; i < info_accordeon.length; i++) {
+                    info_accordeon[i].addEventListener("click", function() {
+                    
+                    this.classList.toggle("active");
+
+                    
+                    let affichage = this.nextElementSibling;
+                    if ( affichage.style.display === "block") {
+                        affichage.style.display = "none";
+                    } else {
+                    affichage.style.display = "block";
+                    }
+                    });
+                } 
+
+            </script>
+
+            
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Taille de la baie (en U) :</span>
+                <span class ="valeur" id="2"></span>
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Nombre de U libres :</span>
+                <span class ="valeur" id="3"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Cable management correct ?</span>
+                <span class ="valeur" id="4"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Possibilité de fermer la baie à clé :</span>
+                <span class ="valeur" id="5"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Etiquetage du nom de la baie correct ?</span>
+                <span class ="valeur" id="6"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Position de la baie :</span>
+                <span class ="valeur" id="7"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Source d'alimentation de la baie :</span>
+                <span class ="valeur" id="8"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Les équipements possédant une double alimentation sont sur plusieurs réseaux électriques ?</span>
+                <span class ="valeur" id="9"></span>
+
+            </p>
+
+            <p class="info-paragraph" id="precision" hidden><!--A mettre si question d'avant sur "partiellement"-->
+
+                <span class ="cle">Précisions :</span>
+                <span class ="valeur" id="10"></span>
+
+            </p>
+
+
+            <p class="info-paragraph"><!--Obligatoire-->
+
+                <span class ="cle">Etiquetage des cables d'alimentation :</span>
+                <span class ="valeur" id="11"></span>
+
+            </p>
+
+            <p class="info-paragraph"><!--Facultative-->
+
+                <span class ="cle">Présence de chemin de câble :</span>
+                <span class ="valeur" id="12"></span>
+
+            </p>
+
+        </div>
+
+    </body>
+</html>

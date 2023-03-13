@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="detail_serveur_style.css">
+        <script type='text/javascript' src="detail_serveur_script.js" defer></script>
+        <script type='text/javascript' src="../timer.js"></script>
+        <title>Audit Grand Est</title>
+    </head>
+    <header>
+        <div id="header-logo">
+            <img id="logo-grand-est" alt="logo Grand Est" src="..\image\Grand_Est_Logo.png">
+        </div>
+        <div id="header-deco-utilisateur">
+            <p id="affichage-utilisateur"> Utilisateur </p>
+            <button id="btn-deconnexion" onclick="deconnexion()"> Déconnexion </button>
+        </div>
+        
+    </header>
+    <body>
+
+        <h2 id="titre-detail-serveur">Détails du Serveur</h2>
+
+
+        <div id="formulaire">
+
+            <h3 id="intitule-serveur"> </h3><!--Obligatoire-->
+
+            <img id="image-serveur" alt="image du serveur"><!--Facultative-->
+
+
+            <button class="info-accordeon" id="button-ad-dns-dhcp" hidden>AD_DNS_DHCP</button>
+            <div class="detail-element" id="detail-ad-dns-dhcp">
+            </div>
+            
+            <button class="info-accordeon" id="button-ticketing" hidden>Ticketing</button>
+            <div class="detail-element" id="detail-ticketing">
+            </div>
+            
+            <button class="info-accordeon" id="button-vm-secu" hidden>VM_SECU</button>
+            <div class="detail-element" id="detail-vm-secu">
+            </div>
+
+            <button class="info-accordeon" id="button-pxe" hidden>PXE</button>
+            <div class="detail-element" id="detail-pxe">
+            </div>
+
+            <button class="info-accordeon" id="button-nas" hidden>NAS</button>
+            <div class="detail-element" id="detail-nas">
+            </div>
+
+            <button class="info-accordeon" id="button-dat" hidden>DATA</button>
+            <div class="detail-element" id="detail-dat">
+            </div>
+
+            <button class="info-accordeon" id="button-serveur-impression" hidden>Serveur_impression</button>
+            <div class="detail-element" id="detail-serveur-impression">
+            </div>
+
+            <button class="info-accordeon" id="button-hyper-v" hidden>Hyper V</button>
+            <div class="detail-element" id="detail-hyper-v">
+            </div>
+
+
+            <script> 
+            
+                let info_accordeon = document.getElementsByClassName("info-accordeon");
+
+                for (let i = 0; i < info_accordeon.length; i++) {
+                    info_accordeon[i].addEventListener("click", function() {
+                    
+                    this.classList.toggle("active");
+
+                    
+                    let affichage = this.nextElementSibling;
+                    if ( affichage.style.display === "block") {
+                        affichage.style.display = "none";
+                    } else {
+                    affichage.style.display = "block";
+                    }
+                    });
+                } 
+
+            </script>
+
+            
+              <p class="info-paragraph">
+                <span class="cle">Etiquetage présent :</span>
+                <span class="valeur" id="2"></span>
+              </p><!--Facultative-->
+
+
+              <p class="info-paragraph">
+
+                <span class="cle">Marque :</span>
+                <span class="valeur" id="3"></span>
+
+              </p><!--Obligatoire-->
+
+
+              <p class="info-paragraph">
+                <span class="cle">Modèle :</span>
+                <span class="valeur" id="4"></span>
+              </p><!--Obligatoire-->
+
+
+              <p class="info-paragraph">
+                <span class="cle">RAM présente :</span>
+                <span class="valeur" id="5"></span>
+              </p><!--Obligatoire-->
+
+
+              <p class="info-paragraph">
+                <span class="cle">Stockage disponible :</span>
+                <span class="valeur" id="6"></span>
+              </p><!--Obligatoire-->
+
+
+              <p class="info-paragraph">
+                <span class="cle">Système d'exploitation :</span>
+                <span class="valeur" id="7"></span>
+              </p><!--Obligatoire-->
+
+
+
+              <p class="info-paragraph">
+                <span class="cle">Année de mise en service :</span>
+                <span class="valeur" id="8"></span>
+              </p><!--Facultative-->
+
+
+        </div>
+
+    </body>
+</html>
